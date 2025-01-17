@@ -24,7 +24,8 @@ public class Main {
         // Задача 3
         System.out.println();
         System.out.println("Задача 3");
-        int carSpeed = 61;
+        int carSpeed = 58
+                ;
         boolean carSpeedLimit = carSpeed > 60;
         if (carSpeedLimit) {
             System.out.println("Если скорость " + carSpeed + " км/ч, придётся заплатить штраф");
@@ -36,17 +37,17 @@ public class Main {
         System.out.println();
         System.out.println("Задача 4");
         int manAge = 46;
-        boolean kinderGardenAge = manAge >= 2 && manAge < 6;
-        boolean schoolAge = manAge >= 7 && manAge < 17;
-        boolean universityAge = manAge >= 18 && manAge <= 24;
+        boolean isKinderGardenAge = manAge >= 2 && manAge < 6;
+        boolean isSchoolAge = manAge >= 7 && manAge < 17;
+        boolean isUniversityAge = manAge >= 18 && manAge <= 24;
         boolean workAge = manAge > 24;
-        if (kinderGardenAge) {
+        if (isKinderGardenAge) {
             System.out.println("Если возраст человека равен " + manAge + " лет, то ему нужно ходить в детский сад.");
         }
-        if (schoolAge) {
+        if (isSchoolAge) {
             System.out.println("Если возраст человека равен " + manAge + " лет, то ему нужно ходить в школу.");
         }
-        if (universityAge) {
+        if (isUniversityAge) {
             System.out.println("Если возраст человека равен " + manAge + " лет, то его место в университете.");
         }
         if (workAge) {
@@ -57,7 +58,7 @@ public class Main {
         System.out.println("Задача 5");
         int childAge = 4;
         boolean childAttractionAgeLowLimit = childAge < 5;
-        boolean childAttractionAgeLimitWithoutAdult = childAge > 5 && childAge < 14;
+        boolean childAttractionAgeLimitWithoutAdult = childAge >= 5 && childAge < 14;
         boolean childAttractionAgeNoLimit = childAge >= 14;
         if (childAttractionAgeLowLimit) {
             System.out.println("Если ребёнку " + childAge + " года, кататься на аттракционе нельзя.");
@@ -72,16 +73,12 @@ public class Main {
         // Задача 6
         System.out.println();
         System.out.println("Задача 6");
-        int placeNumber = 66;
+        int placeNumber = 106;
         if (placeNumber <= 60) {
             System.out.println("В вагоне есть и сидячие и стоячие места.");
-        } else {
-            System.out.println();
         }
         if (placeNumber > 60 && placeNumber <= 102) {
             System.out.println("Вагоне есть только стоячие места.");
-        } else {
-            System.out.println();
         }
         if (placeNumber > 102) {
             System.out.println("В вагоне нет мест.");
@@ -90,23 +87,17 @@ public class Main {
         // Задача 7
         System.out.println();
         System.out.println("Задача 7");
-        int one = 70;
+        int one = 7;
         int two = 45;
         int three = 37;
         if (one > two && one > three) {
             System.out.println("Число one большее, оно равно " + one);
-        } else {
-            System.out.println();
         }
         if (two > one && two > three) {
             System.out.println("Число two большее, оно равно " + two);
-        } else {
-            System.out.println();
         }
         if (three > one && three > two) {
             System.out.println("Число three большее, оно равно " + three);
-        } else {
-            System.out.println();
         }
-    }
-}
+        }
+        }
